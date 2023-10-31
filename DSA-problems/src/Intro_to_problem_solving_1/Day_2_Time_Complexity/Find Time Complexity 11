@@ -1,0 +1,15 @@
+Q. What is the Time Complexity of following snippet ?
+
+    for(int i=0; i<N; i++){
+        for(int j=i; j<N;j++){
+            break;
+        }
+    }
+
+    O(N*N)
+    O(N*log(N))
+    O(N)
+    O(log(N))
+    None of the above
+
+    Ans: 3

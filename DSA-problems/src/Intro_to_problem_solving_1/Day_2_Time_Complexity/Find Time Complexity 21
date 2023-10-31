@@ -1,0 +1,16 @@
+Q. Find the Time Complexity of the following function solve :
+
+for(int i=0;i<Math.pow(2, N);i++){
+    int j=i;
+    while(j>0){
+        j-= 1;
+    }
+}
+
+O(N * N)
+O(2^N)
+O(N * (2^N))
+O(3^N)
+O(4^N)
+
+Ans: 5

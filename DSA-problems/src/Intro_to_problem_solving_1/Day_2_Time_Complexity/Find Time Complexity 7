@@ -1,0 +1,14 @@
+Q. What is the time complexity of the following code snippet
+
+   for(int i = 1 ; i <= 100 ; i*=2){
+       for(int j = 1 ; j <= n ; j++){
+            print(i + j);
+       }
+   }
+
+    O(n^2)
+    O(n)
+    0(nlogn)
+    O(1)
+
+   Ans: 2

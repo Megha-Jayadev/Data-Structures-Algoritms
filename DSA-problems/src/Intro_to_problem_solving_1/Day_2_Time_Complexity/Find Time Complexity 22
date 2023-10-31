@@ -1,0 +1,14 @@
+Q. What will be the time complexity of the above function where n is a positive integer?
+
+while(n>0){
+    n+= 1;
+    n-= 2;
+}
+
+Infinite loop
+O(n)
+O(nlogn)
+O(logn)
+None of the above
+
+Ans: 2
