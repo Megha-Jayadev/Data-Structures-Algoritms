@@ -27,17 +27,50 @@ Explanation 2: The subarray of A from 0 to 1 is [4, 2].
 
 import java.util.Arrays;
 
+//public class SubarrayInGivenRange {
+//    public static void main(String[] args) {
+//        int[] A = new int[]{4, 3, 2, 6};
+//        int B = 1;
+//        int C = 3;
+//        int[] ans = new int[C-B+1];
+//        int count = 0;
+//        for(int i = B; i<= C; i++){
+//            ans[count] = A[i];
+//            count++;
+//        }
+//        System.out.println(Arrays.toString(ans));
+//    }
+//}
+
+
+
+//Print All Subarrays
 public class SubarrayInGivenRange {
     public static void main(String[] args) {
-        int[] A = new int[]{4, 3, 2, 6};
-        int B = 1;
-        int C = 3;
-        int[] ans = new int[C-B+1];
-        int count = 0;
-        for(int i = B; i<= C; i++){
-            ans[count] = A[i];
-            count++;
+        int[] A = new int[]{1, 2, 3, 4};
+
+        for(int si=0; si<A.length; si++) {
+            //require si & ei
+            for (int ei = si; ei < A.length; ei++) {
+                //print start idx to end idx
+                for (int j = si; j <= ei; j++) {
+                    System.out.print(A[j]);
+                }
+                System.out.println("");
+            }
         }
-        System.out.println(Arrays.toString(ans));
     }
 }
+
+
+//public class SubarrayInGivenRange {
+//    public static void main(String[] args) {
+//        int[] A = new int[]{4, 3, 2, 6};
+//        int B = 1;
+//        int C = 3;
+//
+//        for(int i=B; i<=C; i++){
+//           System.out.print(A[i]);
+//        }
+//    }
+//}
